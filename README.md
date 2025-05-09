@@ -5,24 +5,21 @@ To furthermore improve our project, we have decided to add an account or the abi
 This would help secure the information or gaming experience of the users. Having this feature allows the users to switch devices yet maintain their work without facing hassles. Overall, this would enhance the game's functionality by being more personalized, safe and secure.
 
 1. 
-- Type: user login data (username, password)
-- Purpose: logging in to site and saving the progress
-- Structure in JSON format:
-users {
-username : password 
-}
-
-2.
-- Type: save state for each feature (all doll features, background, dialogue)
-- Purpose: saving the last state of each class so that it will not go away when proceeding to the next page.
-- Structure in JSON format:
-states {
-  "face": savedState.face,
-  "top": savedState.top,
-  "bottom": savedState.bottom,
-  "fh": savedState.fh,
-  "bh": savedState.bh,
-  "shoes": savedState.shoes
+- Type: user login data (username, password) and save state for each feature (all doll features, background, dialogue)
+- Purpose: logging in to site and saving saving the last state of each class so that it will not go away when proceeding to the next page.
+- Structure in JSON format example:
+{
+  "username": {
+    "password": "password",
+    "characterState": {
+      "face": 1,
+      "top": 1,
+      "bottom": 1,
+      "fh": 1,
+      "bh": 1,
+      "shoes": 1
+    }
+  }
 }
 
 As for the saved states, they are currently already visible on the actual website. The users may change the state of the feature in page 2, and it will carry on to page 3. Unfortunately, this is still a work in progress so it is not guaranteed to always function properly.
