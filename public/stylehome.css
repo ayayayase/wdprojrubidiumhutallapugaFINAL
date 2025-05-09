@@ -1,0 +1,162 @@
+html, body{
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+     overflow-x: hidden;
+  overflow-y:hidden;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/Untitled%20design%20(3).png?v=1738759857262");
+background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+    min-height: 100vh;
+  display: flex;
+  flex-direction:column;
+}
+
+#btns {
+  z-index: 1001;
+  position: absolute;
+  top: 350px;
+  left: 185px;
+  justify-content: center;
+  margin: auto;
+}
+
+@font-face{
+  font-family:arcadealternate;
+  src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/ArcadeAlternate.ttf?v=1735290960853);
+}
+
+footer {
+  z-index:1000;
+  color:#824ced;
+  margin-top:auto;
+  padding: 10px;
+  background-color: white;
+  position:absolute;
+  bottom:0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  text-align:center;
+  font-family: arcadealternate;
+  font-size: 11px;
+}
+
+#homepage {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+ width: 1350px;
+  height: 759px;
+  margin: 0;
+}
+
+#scrn {
+   grid-column: 1;
+  grid-row: 1;
+   max-width: 1350px;
+  max-height: 759px;
+  display: block;
+  height: 100%;
+  margin: 0;
+}
+#homepage * {
+margin: 0;
+}
+
+#scrn, #logo, #btns, #top{
+ grid-column: 1;
+  grid-row: 1;
+}
+
+#logo {
+  z-index: 999;
+  position: absolute;
+  max-width: 1350px;
+  max-height: 759px;
+  position: absolute;
+width: auto;
+  height: 700px;
+  margin: auto;
+  left: 320px;
+  bottom: 190px;
+}
+
+#btnstrt {
+padding-right: 40px;
+ max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: 450px;
+}
+
+#btnstudio {
+padding-left: 40px;
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: 450px;
+}
+
+#btnaboutus{
+  position: fixed;
+  bottom: 678px;
+  right: 280px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  height: 60px;
+}
+
+#btnstrt:hover, #btnstudio:hover, #ABOUT:hover{
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+#btnstrt:active; #btnstudio:active, #ABOUT:active {
+  transform:scale(1.2);
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+#top {
+  font-family: arcadealternate;
+  color: white;
+  z-index: 1000;
+  margin: auto;
+  position: relative;
+  bottom: 45%;
+}
+
+#btnback1, #btnstudio {
+  z-index: 1003;
+}
+
+#ABOUT {
+  font-family: arcadealternate;
+  color: white;
+  z-index: 1000;
+  margin: auto;
+  position: absolute;
+  bottom: 703px;
+  left: 180px;
+  font-size: 30px;
+  
+}
+
+#btnaboutus:hover{
+  filter: brightness(80%);
+  cursor: pointer;
+}

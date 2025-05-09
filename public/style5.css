@@ -1,0 +1,403 @@
+html, body{
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+     overflow-x: hidden;
+  overflow-y:hidden;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/Untitled%20design%20(3).png?v=1738759857262");
+background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+    min-height: 100vh;
+  display: flex;
+  flex-direction:column;
+}
+
+#homepage {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+ width: 1350px;
+  height: 759px;
+  margin: 0;
+}
+
+footer {
+  z-index:1000;
+  color:#824ced;
+  margin-top:auto;
+  padding: 10px;
+  background-color: white;
+  position:absolute;
+  bottom:0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  text-align:center;
+  font-family: arcadealternate;
+  font-size: 11px;
+}
+
+#scrn {
+   grid-column: 1;
+  grid-row: 1;
+   max-width: 1350px;
+  max-height: 759px;
+  display: block;
+  height: 100%;
+  margin: 0;
+}
+
+#scrn, #logo, #top{
+ grid-column: 1;
+  grid-row: 1;
+}
+
+#logo {
+  z-index: 999;
+  position: relative;
+  max-width: 1350px;
+  max-height: 759px;
+  position: relative;
+width: auto;
+  height: 700px;
+  margin: auto;
+  bottom: 20%;
+}
+
+#namez {
+  font-family: arcadealternate;
+  color: white;
+  z-index: 1000;
+  margin: auto;
+  position: relative;
+  left: 0px;
+  top: -735px;
+}
+
+
+#title {
+  z-index: 1000;
+  position: absolute;
+  font-family: plank;
+  color: #b999fa;
+  -webkit-text-stroke: 0.5px #814beb;
+  font-size: 80px;
+  top: 70px;
+  right: 200px;
+}
+
+#caption {
+  position: absolute;
+  z-index:1000;
+  font-family: arcadealternate;
+  font-size: 25px;
+  top: 100px;
+  right: 185px;
+  color: #F862FF;
+}
+
+
+#hrtlndecor {
+  z-index: 1000;
+  height: auto;
+  width: 400px;
+  position: absolute;
+  top: 15px;
+  right: 220px;
+}
+
+#nav {
+  z-index: 1000;
+max-height: 0px;
+  position: absolute;
+  top: 450px;
+}
+
+#homepage * {
+  margin: auto;
+}
+
+#main {
+  z-index: 1007;
+  max-height: 759px;
+  max-width: auto;
+  height: 610px;
+  width: 465px;
+  position: relative;
+  bottom: 695px;
+  right: 270px;
+}
+
+#ABOUT {
+  font-family: arcadealternate;
+  color: white;
+  z-index: 1000;
+  margin: auto;
+  position: absolute;
+  bottom: 703px;
+  left: 180px;
+  font-size: 30px;
+  
+}
+
+#music-btn {
+  position: fixed;
+  top: 13px;
+  right: 300px;
+  background-color: #d8a5ff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 25px;
+        }
+
+#btnback1{
+  position: absolute;
+  max-width: 200px;
+  max-height: 200px;
+  width: 200px;
+  height: auto;
+  top: 65%;
+  z-index: 1000;
+   left: -75px;
+  margin-right: 1100px;
+  padding: 0;
+}
+
+#btnback1:hover, #ABOUT:hover{
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+@font-face{
+  font-family:arcadealternate;
+  src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/ArcadeAlternate.ttf?v=1735290960853);
+}
+
+@font-face {
+  font-family: plank;
+  src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/PLANK___.TTF?v=1735298004662)
+}
+
+#texts{
+position: relative;
+  left: 0;
+  bottom: 500px;
+}
+
+#US {
+  font-family: arcadealternate;
+  color: #F862FF;
+}
+
+#information {
+  position: absolute;
+  z-index:1000;
+  font-family: arcadealternate;
+  top: 100px;
+  right: 50px;
+  color: #F862FF;
+  text-align: justify;
+  width: 800px;
+}
+
+body {
+  background-color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+/* Profile Card Styling */
+.profile-card {
+  background-color: #2c2c3e;
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+
+/* Avatar Styling */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #ffd700;
+  margin-right: 20px;
+  left: 500px;
+}
+
+/* User Info */
+.user-info .username {
+  font-size: 24px;
+  margin: 0;
+}
+
+.user-info .level {
+  font-size: 16px;
+  color: #b0b0d0;
+  margin-top: 5px;
+}
+
+/* Stats */
+.stats {
+  margin-top: 15px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.stat span {
+  margin-left: 8px;
+}
+
+#login-form, #profile-section, #register-form, #editpass, #editusername{
+  position: relative;
+  bottom:500px;
+  z-index: 9999;
+}
+#login-form, #register-form {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid #e1b3ff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 20px #d994ff;
+  backdrop-filter: blur(8px);
+  font-family: arcadealternate;
+  color: white;
+  text-align: center;
+  width: 300px;
+}
+
+#login-form input, #register-form input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #c980ff;
+  border-radius: 10px;
+  background: #fff1ff;
+  font-family: 'arcadealternate';
+  color: #a85fff;
+  font-size: 14px;
+}
+
+#login-form button, #register-form button {
+  background-color: #db8fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-family: arcadealternate;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px #b25cd8;
+}
+
+#login-form button:hover, #register-form button:hover {
+  background-color: #c774f9;
+}
+
+#registerlink {
+  display: block;
+  margin-top: 10px;
+  font-family: arcadealternate;
+  font-size: 12px;
+  color: #fff8ff;
+  text-decoration: underline;
+}
+
+#registerlink:hover {
+  color: #ffd6ff;
+}
+/* Shared panel styles */
+#profile-section,
+#editusername,
+#editpass {
+  background: rgba(255, 240, 255, 0.2);
+  border: 2px solid #ffa9f9;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px auto;
+  width: fit-content;
+  text-align: center;
+  font-family: 'arcadealternate';
+  color: #fff8fc;
+  box-shadow: 0 0 20px #ffb7f7;
+  backdrop-filter: blur(12px);
+}
+
+/* Headings */
+#profile-section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #fffaff;
+}
+
+/* Form inputs */
+form input[type="text"],
+form input[type="password"] {
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 2px solid #ddaaff;
+  background: #fff0ff;
+  font-family: 'arcadealternate';
+  margin: 5px 0;
+  width: 200px;
+  color: #a05ec8;
+  outline: none;
+}
+
+form input::placeholder {
+  color: #c795e6;
+}
+
+/* Buttons */
+button {
+  background-color: #d490ff;
+  border: 2px solid #b470e0;
+  color: #fffaff;
+  font-family: 'arcadealternate';
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px #a65cce;
+}
+
+button:hover {
+  background-color: #c576ff;
+  transform: scale(1.05);
+}
+
+/* DELETE account button (extra attention) */
+form button[type="submit"]:contains('DELETE') {
+  background-color: #ff4d9a !important;
+  border: 2px solid #d92a77 !important;
+  box-shadow: 0 4px #a12d60 !important;
+}
+
+form button[type="submit"]:contains('DELETE'):hover {
+  background-color: #e63885 !important;
+}
