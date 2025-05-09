@@ -1,0 +1,205 @@
+html, body{
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+     overflow-x: hidden;
+  overflow-y:hidden;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/Untitled%20design%20(3).png?v=1738759857262");
+background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+    min-height: 100vh;
+  display: flex;
+  flex-direction:column;
+}
+
+@font-face{
+  font-family:arcadealternate;
+  src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/ArcadeAlternate.ttf?v=1735290960853);
+}
+
+@font-face {
+  font-family: plank;
+  src: url(https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/PLANK___.TTF?v=1735298004662)
+}
+
+footer {
+  z-index:1000;
+  color:#824ced;
+  margin-top:auto;
+  padding: 10px;
+  background-color: white;
+  position:absolute;
+  bottom:0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  text-align:center;
+  font-family: arcadealternate;
+  font-size: 11px;
+}
+
+
+#homepage {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+ width: 1350px;
+  height: 759px;
+  margin: 0;
+}
+
+#scrn {
+   grid-column: 1;
+  grid-row: 1;
+   max-width: 1350px;
+  max-height: 759px;
+  display: block;
+  height: 100%;
+  margin: 0;
+}
+
+#scrn, #logo, #top{
+ grid-column: 1;
+  grid-row: 1;
+}
+
+#logo {
+  z-index: 999;
+  position: relative;
+  max-width: 1350px;
+  max-height: 759px;
+  position: relative;
+width: auto;
+  height: 700px;
+  margin: auto;
+  bottom: 20%;
+}
+
+#namez {
+  font-family: arcadealternate;
+  color: white;
+  z-index: 1000;
+  margin: auto;
+  position: absolute;
+  bottom: 93%;
+  left: 40%;
+}
+
+
+#title {
+  z-index: 1000;
+  position: absolute;
+  font-family: plank;
+  color: #b999fa;
+  -webkit-text-stroke: 0.5px #814beb;
+  font-size: 80px;
+  top: 100px;
+  right: 180px;
+}
+
+#caption {
+  position: absolute;
+  z-index:1000;
+  font-family: arcadealternate;
+  font-size: 25px;
+  top: 85px;
+  right: 185px;
+  color: #F862FF;
+}
+
+#hrtlndecor {
+  z-index: 1000;
+  height: auto;
+  width: 400px;
+  position: absolute;
+  top: 63px;
+  right: 220px;
+}
+
+#nav {
+  z-index: 1000;
+max-height: 0px;
+  position: absolute;
+  top: 450px;
+}
+
+#btnback1, #btnstudio {
+  position: absolute;
+  max-width: 200px;
+  max-height: 200px;
+  width: 200px;
+  height: auto;
+  top: 30px;
+  z-index: 1;
+  
+}
+
+#btnback1 {
+  position: absolute;
+  left: -75px;
+  margin-right: 1100px;
+  padding: 0;
+}
+
+#btnstudio {
+  position: absolute;
+  left: 1230px;
+  margin-right: 1100px;
+  padding: 0;
+}
+
+#btnback1:hover, #btnstudio:hover{
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+#homepage * {
+  margin: auto;
+}
+
+#description { 
+   position: absolute;
+  z-index:1000;
+  font-family: arcadealternate;
+  font-size: 28px;
+  top: 330px;
+  right: 275px;
+  color: #F862FF;
+  text-align: justify;
+  width: 800px;
+}
+
+#btnaboutus{
+  position: fixed;
+  bottom: 678px;
+  right: 280px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  height: 60px;
+}
+
+#acc {
+  z-index: 9999;
+}
+
+#btnaboutus:hover{
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+span {
+  color: #864fec;
+}

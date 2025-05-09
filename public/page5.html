@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Duchess Hutalla">
+  <meta name="description" content="Dress up your own character with many options available!">
+  <meta name="keywords" content="dress up, web, game, original, character, dialogue, maker, customization, custom">
+  <title>Dress the Best (Dress-Up)</title>
+  <link href="style5.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/favicon.gif?v=1735290537023">
+</head>
+  
+  <body>
+    
+    
+   <div id="homepage">
+    
+     
+   <img id="scrn" src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/scren.png?v=1733993122235">
+ <h1 id="namez">
+    dlphutalla x rjppuga
+  </h1>
+      
+     
+     <a href="page4.html" id="ABOUT" >About Game</a>
+    
+    <h1 id="title">
+      account
+    </h1>
+
+    <div id="login-form">
+      <form action="/login" method="POST">
+        <input id="inputusername" type="text" name="username" placeholder="Username" required><br>
+        <input id="inputpass" type="password" name="password" placeholder="Password" required><br>
+        <button id="loginbtn" type="submit">Login</button>
+        <a href="#" id="registerlink">Don't have an account yet? Register here!</a>
+      </form>
+      </div>
+
+      <div id="register-form" style="display: none;">
+      <form action="/register" method="POST">
+        <input id="inputusername" type="text" name="username" placeholder="Username" required style="margin: 0;"><br>
+        <input id="inputpass" type="password" name="password" placeholder="Password" required><br>
+        <button id="registerbtn" type="submit">Register</button>
+      </form>
+    </div>  
+
+    <div id="profile-section" style="display: none;">
+      <h2>Hello, <span id="username"></span>!</h2>
+      <button onclick="logout()">Logout</button>
+      <button onclick="editpass()">Edit Password</button>
+      <button onclick="editusername()">Edit Username</button>
+      <form method="POST" action="/delete" onsubmit="return confirm('Are you sure you wanna delete your account forever?! This is irreversible!');">
+        <button type="submit">DELETE ACCOUNT</button>
+      </form>
+      
+      
+    </div>
+
+    <div id="editusername" style="display: none;">
+    <form method="POST" action="/editusername">
+      <input type="text" name="newUsername" placeholder="New Username" required>
+      <button type="submit">Change Username</button>
+    </form>
+    </div>
+    
+    <div id="editpass" style="display: none;">
+      <form method="POST" action="/editpassword">
+        <input type="password" name="currentPassword" placeholder="Current Password" required>
+        <input type="password" name="newPassword" placeholder="New Password" required>
+        <button type="submit">Change Password</button>
+      </form>      
+    </div>      
+     
+  
+    <img id="hrtlndecor" src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/heartlinedecor.gif?v=1735300541630">
+    
+
+     <img id="btnback1" src="https://cdn.glitch.global/3b0c555a-66e1-432a-baca-4bf522e55a01/BACK.png?v=1735295726757" onclick="goBack()">
+     
+ </div>
+  
+   
+      <footer>Copyright &copy Duchess Hutalla / Rhein Puga 9-Rubidium 2028 <br>Trawlist, A. (2018, December 30). Make a Dress-up game using Javascript, HTML and CSS. Stashable. https://stashable.wordpress.com/2018/12/30/make-a-dress-up-game-using-javascript-html-and-css/
+    </footer>
+      <script src="node5.js"></script>
+  </body>
+  
+
+  
+  
+</html>

@@ -1,0 +1,46 @@
+{
+  "kms": {
+    "password": "ijbol",
+    "characterState": {
+      "face": 3,
+      "top": 2,
+      "bottom": 2,
+      "fh": 4,
+      "bh": 2,
+      "shoes": 3
+    }
+  },
+  "HOORAY": {
+    "password": "gootbye",
+    "characterState": {
+      "face": 2,
+      "top": 2,
+      "bottom": 2,
+      "fh": 2,
+      "bh": 2,
+      "shoes": 2
+    }
+  },
+  "rheinjhanne": {
+    "password": "1224",
+    "characterState": {
+      "face": 1,
+      "top": 1,
+      "bottom": 1,
+      "fh": 1,
+      "bh": 1,
+      "shoes": 1
+    }
+  },
+  "rcfm": {
+    "password": "mwuah",
+    "characterState": {
+      "face": 3,
+      "top": 1,
+      "bottom": 3,
+      "fh": 3,
+      "bh": 3,
+      "shoes": 4
+    }
+  }
+}
